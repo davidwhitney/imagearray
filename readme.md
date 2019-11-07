@@ -17,11 +17,11 @@ Outputs:
 ```bash
 > Image reducer
 > Processing app/cat.jpg
-> Array is generated "pre-snaked"...
 > 000-000-000,000-000-000,034-029-023,053-049-04...
 ```
 
 *Note*: add `--snake` to snake the rows, inverting every other line of bytes.
+Snaked output will display a hint in the console.
 
 Generate preview for visual checking
 ```bash
