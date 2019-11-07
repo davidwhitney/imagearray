@@ -1,8 +1,4 @@
 const ImageMap = require('./imageMap');
-
-const mapped = new ImageMap();
-
-// Usage: node app/index.js app/cat.jpg
 const file = process.argv[2];
 const preview = process.argv[3] === '--preview';
 const snake = process.argv[3] === '--snake';
@@ -10,9 +6,10 @@ const snake = process.argv[3] === '--snake';
 console.log('Image reducer');
 console.log(`Processing ${file}`);
 
+const mapped = new ImageMap();
+
 mapped.load(file)
     .then((image) => {
-        let output;
         if (preview) {
             console.log(image.visualizeForDisplay());
             return;
