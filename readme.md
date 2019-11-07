@@ -9,8 +9,10 @@ Reduces any jpg to a 10 x 10 array of RGB values.
 ## Usage
 Generate array data:
 ```bash
-> node app/index.js JPG-PATH app/cat.jpg
+> node app/index.js JPG-PATH
 ```
+Where JPG-PATH is app/cat.jpg
+
 Outputs: 
 ```bash
 > Image reducer
